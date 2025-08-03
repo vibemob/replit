@@ -1,0 +1,33 @@
+
+[application]
+name = "stock-search-app"
+default_platform = "web"
+
+[web.app]
+title = "Stock Search App"
+base_path = "."
+
+[web.watcher]
+watch_path = ["src", "index.html"]
+reload_html = true
+index_on_404 = true
+
+[web.resource]
+style = []
+script = []
+
+[bundle]
+identifier = "com.example.stock-search-app"
+publisher = "Example Publisher"
+icon = []
+resources = []
+copyright = ""
+category = "DeveloperTool"
+short_description = "A stock search application"
+long_description = "A Dioxus web application for searching and viewing stock information"
+
+[[web.resource.style]]
+href = "https://unpkg.com/normalize.css@8.0.1/normalize.css"
+
+[web.proxy]
+# Add any proxy configuration if needed
