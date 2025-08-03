@@ -16,6 +16,9 @@ index_on_404 = true
 style = []
 script = []
 
+[web.resource.dev] 
+script = []
+
 [bundle]
 identifier = "com.example.stock-search-app"
 publisher = "Example Publisher"
@@ -25,9 +28,3 @@ copyright = ""
 category = "DeveloperTool"
 short_description = "A stock search application"
 long_description = "A Dioxus web application for searching and viewing stock information"
-
-[[web.resource.style]]
-href = "https://unpkg.com/normalize.css@8.0.1/normalize.css"
-
-[web.proxy]
-# Add any proxy configuration if needed

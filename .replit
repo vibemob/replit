@@ -13,4 +13,8 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "dx serve --port 5000 --hot-reload"
+args = "dx serve --port 5000 --hot-reload true"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
