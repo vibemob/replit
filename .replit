@@ -2,3 +2,15 @@ modules = ["rust-stable", "nix"]
 [nix]
 channel = "stable-25_05"
 packages = ["rustup", "dioxus-cli"]
+
+[workflows]
+runButton = "Serve Web App"
+
+[[workflows.workflow]]
+name = "Serve Web App"
+author = 45923249
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "dx serve --port 5000 --hot-reload"
