@@ -13,7 +13,6 @@ reload_html = true
 index_on_404 = true
 
 [web.resource]
-style = []
 script = []
 
 [web.resource.dev] 
