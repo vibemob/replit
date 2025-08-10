@@ -29,6 +29,7 @@ fn main() {
     dioxus_web::launch(App);
 }
 
+#[component]
 fn App(cx: Scope) -> Element {
     let search_query = use_state(cx, || String::new());
     let search_results = use_state(cx, || Vec::<SearchResult>::new());
