@@ -2,7 +2,7 @@ modules = ["rust-stable", "web"]
 run = "cargo run"
 [nix]
 channel = "stable-25_05"
-packages = ["rustup", "dioxus-cli", "openssl", "mob", "direnv"]
+packages = ["rustup", "dioxus-cli", "openssl", "mob", "direnv", "wasm-bindgen-cli_0_2_100"]
 
 [workflows]
 runButton = "Serve Web App"
