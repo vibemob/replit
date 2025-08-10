@@ -1,7 +1,8 @@
-modules = ["rust-stable", "nix"]
+modules = ["rust-stable", "web"]
+run = "cargo run"
 [nix]
 channel = "stable-25_05"
-packages = ["rustup", "dioxus-cli"]
+packages = ["rustup", "dioxus-cli", "openssl", "mob"]
 
 [workflows]
 runButton = "Serve Web App"
@@ -18,3 +19,6 @@ args = "dx serve --platform web --port 5000 --hot-reload true"
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[deployment]
+run = ["sh", "-c", "cargo run"]
