@@ -85,7 +85,7 @@ fn App(cx: Scope) -> Element {
         });
     };
 
-    render! {
+    rsx! {
         div {
             style: "font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px;",
             
