@@ -1,0 +1,8 @@
+modules = ["rust-stable"]
+[nix]
+channel = "stable-25_05"
+packages = ["dioxus-cli", "rustup"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80
